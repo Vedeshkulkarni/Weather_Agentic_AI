@@ -4,6 +4,10 @@ An AI-powered weather assistant built using **LangGraph, LangChain, Gemini LLM, 
 
 This project uses an **Agentic AI architecture**, where the AI agent can understand user queries, decide when to use external tools, fetch real-time weather information, and provide a natural language response.
 
+# Live Demo
+
+https://weatheragenticai-2k8esub6a5mt4dxvjf7hq3.streamlit.app/
+
 ---
 
 # 🚀 Features
