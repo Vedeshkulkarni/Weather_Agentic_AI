@@ -1,6 +1,6 @@
 # 🌦️ Weather Agentic AI
 
-An AI-powered weather assistant built using **LangGraph, LangChain, Gemini LLM, OpenWeatherMap API, and Streamlit**.
+An AI-powered weather assistant built using **LangGraph, LangChain, openAI LLM, OpenWeatherMap API, and Streamlit**.
 
 This project uses an **Agentic AI architecture**, where the AI agent can understand user queries, decide when to use external tools, fetch real-time weather information, and provide a natural language response.
 
@@ -13,7 +13,7 @@ https://weatheragenticai-2k8esub6a5mt4dxvjf7hq3.streamlit.app/
 # 🚀 Features
 
 * 🤖 AI Agent built with **LangGraph**
-* 🧠 Gemini LLM integration using **LangChain**
+* 🧠 openAI LLM integration using **LangChain**
 * 🔧 Intelligent tool calling
 * 🌍 Real-time weather information using OpenWeatherMap API
 * 💬 Interactive web interface using Streamlit
@@ -38,7 +38,7 @@ https://weatheragenticai-2k8esub6a5mt4dxvjf7hq3.streamlit.app/
           LangGraph AI Agent
                   |
                   v
-             Gemini LLM
+             openAI LLM
                   |
         Decides Tool Usage
                   |
@@ -145,14 +145,14 @@ Create a `.env` file in the project root directory.
 Add your API keys:
 
 ```env
-GOOGLE_API_KEY=your_gemini_api_key
+openAI_API_KEY=your_openAI_api_key
 
 OPENWEATHER_API_KEY=your_openweathermap_api_key
 ```
 
 ### Required APIs:
 
-* Gemini API Key → Used for AI responses
+* openAI API Key → Used for AI responses
 * OpenWeatherMap API Key → Used for real-time weather information
 
 ---
@@ -209,7 +209,7 @@ Weather forecast in Chennai
 1. User enters a weather query.
 2. Streamlit sends the request to the AI agent.
 3. LangGraph manages the agent workflow.
-4. Gemini understands the user request.
+4. openAI understands the user request.
 5. Agent decides whether a tool is needed.
 6. Weather tool calls OpenWeatherMap API.
 7. Weather data is returned to the agent.
@@ -242,7 +242,7 @@ Main dependencies:
 streamlit
 langchain
 langchain-core
-langchain-google-genai
+langchain-openAI
 langgraph
 python-dotenv
 requests
