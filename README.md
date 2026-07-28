@@ -268,6 +268,6 @@ Built with ❤️ using:
 * Python
 * LangGraph
 * LangChain
-* Gemini
+* openAI
 * Streamlit
 * OpenWeatherMap API
