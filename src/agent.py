@@ -46,7 +46,7 @@ def ask_agent(question: str):
         },
         config={
             "configurable": {
-                "thread_id":"weather_chat"
+                "thread_id":"weather_chat_1"
         }
     }
 )
