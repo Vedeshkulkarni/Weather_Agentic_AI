@@ -91,7 +91,7 @@ Weather_Agentic_AI/
 | uv                 | Python package and environment manager |
 | LangGraph          | Agent workflow creation                |
 | LangChain          | LLM application framework              |
-| Gemini             | Large Language Model                   |
+| openAi             | Large Language Model                   |
 | OpenWeatherMap API | Real-time weather data                 |
 | Streamlit          | User interface                         |
 | python-dotenv      | Environment variable management        |
