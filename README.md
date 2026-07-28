@@ -75,8 +75,8 @@ Weather_Agentic_AI/
 │   │
 │   ├── agent.py              # LangGraph agent implementation
 │   ├── tools.py              # Weather API tool
-│   ├── config.py             # Configuration settings
-│   └── prompts.py            # Agent prompts
+│             
+│             
 │
 └── README.md
 ```
