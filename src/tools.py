@@ -18,6 +18,7 @@ def get_weather(location: str) -> str:
         description = data["weather"][0]["description"]  
         main_weather = data["weather"][0]["main"]       
         feels_like = data["main"]["feels_like"]
+        timezone_offset = data["timezone"]
         sunrise = datetime.datetime.fromtimestamp(data["sys"]["sunrise"] + timezone_offset,datetime.timezone.utc).strftime("%I:%M %p")
         sunset = datetime.datetime.fromtimestamp(data["sys"]["sunset"] + timezone_offset,datetime.timezone.utc).strftime("%I:%M %p")
         if temperature >= 35:
