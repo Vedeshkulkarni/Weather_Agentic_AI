@@ -18,8 +18,8 @@ def get_weather(location: str) -> str:
         description = data["weather"][0]["description"]  
         main_weather = data["weather"][0]["main"]       
         feels_like = data["main"]["feels_like"]
-        sunrise = datetime.datetime.fromtimestamp(data["sys"]["sunrise"]).strftime("%I:%M %p")
-        sunset = datetime.datetime.fromtimestamp(data["sys"]["sunset"]).strftime("%I:%M %p")
+        sunrise = datetime.datetime.fromtimestamp(data["sys"]["sunrise"] + timezone_offset,datetime.timezone.utc).strftime("%I:%M %p")
+        sunset = datetime.datetime.fromtimestamp(data["sys"]["sunset"] + timezone_offset,datetime.timezone.utc).strftime("%I:%M %p")
         if temperature >= 35:
             advice = "Hot weather. Drink water and avoid long outdoor activities."
         elif temperature <= 15:
@@ -27,8 +27,7 @@ def get_weather(location: str) -> str:
         else:
             advice = "Weather is comfortable."    
         return (
-            f"The Weather in {location} is {main_weather} ({description}) "
-            f"with temperature {temperature}°C\n"
+            f"The Weather in {location} is {main_weather} ({description}) with temperature {temperature}°C\n"
             f"It feels like {feels_like}°C\n"
             f"Humidity = {humidity}%\n"
             f"Wind speed = {wind_speed} m/s\n"
