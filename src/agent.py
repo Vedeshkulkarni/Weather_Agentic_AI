@@ -9,6 +9,7 @@ load_dotenv()
 
 llm = ChatOpenAI(
     model="openrouter/auto",
+    max_tokens=512,
     temperature=0,
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
